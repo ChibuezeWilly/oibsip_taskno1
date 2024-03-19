@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <meta name="description"
+        content="Are you searching for a Front-End Web Developer? I invite you to delve into my portfolio and discover how I can transform your vision into an engaging and impactful web presence.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Chibueze Williams">
+    <meta name="title" property="og:title" content="Williams Portfolio site" />
+    <meta name="type" property="og:type" content="website" />
+    <meta name="image" property="og:image" content="meta-image.png" />
+    <meta name="url" property="og:url" content="" />
+    <script src="https://kit.fontawesome.com/80f58ac4a7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+</head>
+
+<body>
+
+
+    <div id="home">
+        <ul class="sidebar">
+            <li class="close showOnMobile" onclick="hideSideBar()"><i class="fas fa-times"></i></li>
+            <li class="showOnMobile active-link"><a href="#home">Home</a></li>
+            <li class="showOnMobile"><a href="#about">About</a></li>
+            <li class="showOnMobile"><a href="#services">Services</a></li>
+            <li class="showOnMobile"><a href="#portfolio">Portfolio</a></li>
+            <li class="showOnMobile"><a href="#contact">Contact</a></li>
+        </ul>
+        <nav>
+            <ul class="navigation">
+                <h1 class="nav-logo"><span>W</span>illiams</h1>
+                <li class="hideOnMobile active"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#services">Services</a></li>
+                <li class="hideOnMobile"><a href="#portfolio">Portfolio</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li class="open" onclick="showSideBar()"><i class="fas fa-bars"></i></li>
+            </ul>
+        </nav>
+        <div class="head">
+            <div class="text">
+                <p class="paragraph1">Front-End Web Developer</p>
+                <h1 class="header1">Hi I'm <span class="span1">Chibueze</span><br>Williams from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="column1">
+                    <img src="about-me image.jpg" alt="" class="image1">
+                </div>
+                <div class="column2">
+                    <h1 class="abt">About Me</h1>
+                    <p class="paragraph2">
+                        Enthusiastic and fast-learning Front-End Web Developer with a strong foundation in <span
+                            class="spn">
+                            HTML, CSS3,</span> and <span class="spn">JavaScript</span>. Eager to learn, contribute to a
+                        collaborative team environment and leverage my skills to build user-friendly and responsive web
+                        applications.
+                    </p>
+                    <div class="my-projects">
+                        <span class="project-text">Projects worked on :</span>
+                        <ul class="about-me">
+                            <li>A working calculator</li>
+                            <a href="https://calculator-flax-six.vercel.app/" target="_blank">Click the Link</a>
+                            <li>A Holiday Website</li>
+                            <a href="https://fixer-holiday-website.vercel.app/" target="_blank">Click the link</a>
+                            <li>A Temperature Converter</li>
+                            <a href="https://temperature-converter-2vep6bisn-chibueze-williams-s-projects.vercel.app/" target="_blank">Click the link</a>
+                        </ul>
+                    </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Content Management System</span><br>Creation and modification of digital content </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2024</span><br>Internship at PlacementDost</li>
+                            <li><span>2023</span><br>Team lead at Echesin Ltd
+                            <li>
+                            <li><span>2023</span><br>CMS training at edX</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>WAEC at Solid Foudation International School Cotonou </li>
+                            <li><span>2023</span><br>Front-End Web Development at Jovian</li>
+                            <li><span>2024</span><br>Front-end Web Development training at freeCodeCamp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="header2">My Services</h1>
+            <div class="card-wrapper">
+                <div class="card">
+                    <i class="fa-solid fa-desktop"></i>
+                    <div class="card-body">
+                        <h2>Web Design</h2>
+                        <p>Creating the look and feel of websites. Maintaining the software and databases that make a
+                            site work.
+                            Crafting the overall vison of a website to make it more visaully appealing to users
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ui.png" alt="">
+                    <div class="card-body">
+                        <h2>UI</h2>
+                        <p>Bringing ideas to life by translating mockups and design elements created by graphic
+                            designers into functional code. Ensuring the website looks good and functions flawlessly
+                            across different devices, from desktops and laptops to tablets and smartphones</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-building-user"></i>
+                    <div class="card-body">
+                        <h2>UX</h2>
+                        <p>Understanding user psychology and design principles to create intuitive and user-friendly
+                            interfaces.This involves optimizing the website's navigation and overall flow to ensure a
+                            smooth and enjoyable user experience.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="computer.png" alt="" style="width: 64px;">
+                    <div class="card-body">
+                        <h2>Content Management System Integration</h2>
+                        <p>Integrating websites with popular CMS platforms like WordPress, Drupal, etc.
+                            Building custom themes and functionalities for these platforms.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <div class="card-body">
+                        <h2>Web Development</h2>
+                        <p>Building websites and web applications that meet project objectives and provide a positive
+                            user experience and ensuring the website is visually appealing and easy to navigate</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-binoculars"></i>
+                    <div class="card-body">
+                        <h2>Responsive Design</h2>
+                        <p>Using media queries to specify styles for different screen sizes and devices. Adjusting
+                            layouts, fonts, and other elements based on the specific device accessing the website.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my-skills -->
+    <div class="my-skills" id="myskills">
+        <h1 class="skills-header">My Skills</h1>
+        <div class="myskills">
+            <h4 class="skills-text">HTML5</h4>
+            <div class="skill-container">
+                <div class="width html">85%</div>
+            </div>
+        </div>
+        <div class="myskills">
+            <h4 class="skills-text">CSS3</h4>
+            <div class="skill-container">
+                <div class="width css">85%</div>
+            </div>
+        </div>
+        <div class="myskills">
+            <h4 class="skills-text">JAVASCRIPT</h4>
+            <div class="skill-container">
+                <div class="width javascript">50%</div>
+            </div>
+        </div>
+        <div class="myskills">
+            <h4 class="skills-text">CMS</h4>
+            <div class="skill-container">
+                <div class="width cms">90%</div>
+            </div>
+        </div>
+        <div class="myskills">
+            <h4 class="skills-text">C</h4>
+            <div class="skill-container">
+                <div class="width c">40%</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- porfolio begins -->
+    <div class="portfolio" id="portfolio">
+        <h1 class="paragraph3">
+            My Blogs
+        </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p class="work-p">The app connects you to the talented around the world by foster meaningful
+                        connections and authentic interactions
+                    </p>
+                    <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p class="work-p">
+                        Elevate Your Listening Experience by analyzing your listening habits, exploring your favorite
+                        artists and genres
+                    </p>
+                    <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p class="work-p">
+                        Convenience at Your Fingertips by saving both time and money and offering a more smarter and
+                        rewarding shopping experience
+                    </p>
+                    <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="responsive-web-design.webp" alt="" style="height: 450px; object-fit: cover;">
+                <div class="layer">
+                    <h3>Responsive Design</h3>
+                    <p class="work-p">
+                        Best Practices and Techniques through various methods and tools for creating responsive websites
+                        that adapt seamlessly across devices.
+                    </p>
+                    <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="DSCF4992-1920x1280.jpg" alt="" style="height: 450px; object-fit: cover;">
+                <div class="layer">
+                    <h3>
+                        Importance of Continuous Learning for Web Developers
+                    </h3>
+                    <p class="work-p">
+                        The web development landscape is like a vibrant ecosystem. It's constantly evolving, with new
+                        technologies emerging, frameworks gaining traction, and best practices being redefined
+                    </p>
+                    <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="CSS-new-features-2021.avif" alt="" style="height: 450px; object-fit: cover;">
+                <div class="layer">
+                    <h3>The Power of CSS</h3>
+                    <p class="work-p">
+                        Advanced Techniques for Styling and Animation of webpages using CSS. Laying foundation for
+                        structure, layout, and responsiveness of websites.
+                    </p>
+                    <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact section -->
+    <div class="contact" id="contact">
+        <div class="wrap">
+            <div class="contact-left">
+                <h1 class="header3">Contact me</h1>
+                <p><span><i class="fa-solid fa-paper-plane"></i></span>williamschibueze06@gmail.com</p>
+                <p><span><i class="fa-solid fa-phone"></i></span>+229 61975355</p>
+                <div class="social-icons">
+                    <li><a href="https://www.facebook.com/profile.php?id=100091860549616"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><i class="fa-brands fa-upwork"></i></li>
+                    <li><a href="https://github.com/ChibuezeWilly/My-Portfolio2"><i class="fa-brands fa-github"></i>
+                        </a></li>
+                    <li><a href="http://www.linkedin.com/in/chibueze-obodo-27496a2b9"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                </div>
+                <a href="My resume.pdf" download class="btn-1">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form action="" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="text" name="Email" placeholder="Email" required>
+                    <textarea name="Message" id="Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn-1 btn-2">Send message</button>
+                    <span id="msg"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>Copyright <span>(c) 2024</span> ChibuezeWilly</p>
+        </div>
+    </footer>
+    <script>
+        function showSideBar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = ("flex");
+        }
+        function hideSideBar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = ("none");
+        }
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxvyDuZtnbYvsfbFfPEjRQ1iPj1Jx2oHT71hXT6bRNn83qi9j5Q-xavE6eMFhBrOiZ3/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Successfully sent"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
